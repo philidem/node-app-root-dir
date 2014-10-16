@@ -4,7 +4,18 @@ node-app-root-dir
 Simple module to infer the root directory of the currently running node application
 
 ## Usage
+```javascript
+// get the application's root directory
 var appRootDir = require('app-root-dir').get();
+
+// set the application's root directory
+// (this will set a global so that no matter
+// how many instances app-root-dir module are
+// installed, they will all return the same
+// directory)
+require('app-root-dir').set(__dirname);
+```
+
 
 ## How it Works
 The following strategy is used to find the application's root directory (the directory in your project that contains the main package.json file):
