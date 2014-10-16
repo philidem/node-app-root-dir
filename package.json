@@ -1,6 +1,6 @@
 {
   "name": "app-root-dir",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple module to infer the root directory of the currently running node application",
   "main": "lib/index.js",
   "repository": {
